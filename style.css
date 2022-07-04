@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+  padding: 10px;
+  width: 100%;
+  background-color: #e0deca;
+}
+.box-container {
+  display: flex;
+  justify-content: space-between;
+}
+.about {
+  display: inline-block;
+}
+
+header {
+  font-family: brush script mt;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 0 0 10px;
+  text-align: center;
+  background-image: url(../awan.jpg);
+  background-color: #261c2c;
+  padding: 10px;
+}
+header h1 {
+  font-size: 40px;
+  color: white;
+}
+
+h1 {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+h3 {
+  color: #e0deca;
+}
+nav {
+  background-color: rgb(87, 84, 80);
+  overflow: hidden;
+}
+nav a {
+  float: left;
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: #839aa8;
+  border-radius: 20px;
+  color: white;
+}
+a.tbl-ungu {
+  background: black;
+  border-radius: 20px;
+  margin-top: 30px;
+  padding: 10px 15px 10px 15px;
+  color: #f3e9dd;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a.tbl-ungu:hover {
+  background: #dedede;
+  text-decoration: none;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
+.card {
+  background-color: #423f3e;
+  padding: 80px;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.gallery {
+  text-align: center;
+}
+.gallery .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.gallery .content .card {
+  width: 340px;
+  margin: 10px;
+}
+img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+.gallery .content .card .card-img {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.gallery .content .card .card-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-github {
+  background: #3b5998;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(87, 84, 80);
+  margin-top: 20px;
+}
+@media screen and (max-width: 800px) {
+  .section,
+  .article {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+#copyright {
+  text-align: center;
+  width: 100%;
+  padding: 50px 0px 50px 0px;
+  margin-top: 50px;
+  background-color: black;
+  color: #dedede;
+}
